@@ -57,6 +57,10 @@ class TestCaseTest(TestCase):
         assert ("setUp testMethod tearDown " == test.log)
 
     def testResult(self):
+        """
+        テスト結果
+        :return:
+        """
         test = WasRun("testMethod")
         result = test.run()
         assert ("1 run, 0 failed" == result.summary())
