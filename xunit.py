@@ -66,6 +66,10 @@ class TestCaseTest(TestCase):
         assert ("1 run, 0 failed" == result.summary())
 
     def testFailedResult(self):
+        """
+        テスト失敗結果
+        :return:
+        """
         test = WasRun("testBrokenMethod")
         result = test.run()
         assert ("1 run, 0 failed" == result.summary())
